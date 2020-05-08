@@ -5,7 +5,7 @@ VAR
 BEGIN
     WHILE (c <> '#') DO
         Read(c);
-        IF ((NOT Isdigit(c)) OR (c<>'+' AND c<>'-' AND c<>'*' AND c<>'/') THEN
+        IF ((NOT isDigit(c)) OR (c<>'+' AND c<>'-' AND c<>'*' AND c<>'/') THEN
             wrong := TRUE;
         END_IF
 
