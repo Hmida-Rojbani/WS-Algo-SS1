@@ -9,7 +9,7 @@ VAR
 BEGIN
     WHILE (c <> '#' AND state <> 5) DO
         Read(c);
-        SWITCH (c) DO
+        SWITCH (state) DO
             case 0 :IF (c = ' ') THEN
                         state := 0; BREAK;
                     ELSE_IF (isDigit(c)) THEN //update task 3
