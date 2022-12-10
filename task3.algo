@@ -5,8 +5,8 @@ VAR
 BEGIN
     Write("Give the number");
     Read(nb);
-    day   := nb % 1000000;
-    month := nb % 10000;
+    day   := nb / 10000;
+    month := nb / 10000 % 100;
     year  := nb % 100;
     IF ( month > 12 or day > 31) THEN
         Write("Wrong date, verify the given number.");
